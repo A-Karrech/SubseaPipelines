@@ -1,0 +1,149 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\astroncite{Antonio et~al.}{2012}]{Antonio:2012tm}
+Antonio, D., Zanette, D.~H., and L{\'o}pez, D. (2012).
+\newblock Frequency stabilization in nonlinear micromechanical oscillators.
+\newblock {\em Nature Communications}, 3(1):806.
+
+\bibitem[\protect\astroncite{Bi and Hao}{2016}]{Bi:2016aa}
+Bi, K. and Hao, H. (2016).
+\newblock Using pipe-in-pipe systems for subsea pipeline vibration control.
+\newblock {\em Engineering Structures}, 109:75--84.
+
+\bibitem[\protect\astroncite{Bokaian}{1990}]{Bokaian:1990tk}
+Bokaian, A. (1990).
+\newblock Natural frequencies of beams under tensile axial loads.
+\newblock {\em Journal of Sound and Vibration}, 142(3):481--498.
+
+\bibitem[\protect\astroncite{Choi}{2001}]{Choi:2001aa}
+Choi, H.~S. (2001).
+\newblock Free spanning analysis of offshore pipelines.
+\newblock {\em Ocean Engineering}, 28(10):1325--1338.
+
+\bibitem[\protect\astroncite{{Det Norske Veritas}}{2006}]{DNV-RP-F105}
+{Det Norske Veritas} (2006).
+\newblock {\em Free spanning pipelines}.
+\newblock DNV, Norway.
+
+\bibitem[\protect\astroncite{{Det Norske Veritas}}{2012}]{DNV-OS-F101}
+{Det Norske Veritas} (2012).
+\newblock {\em Submarine Pipeline Systems}.
+\newblock DNV, Norway.
+
+\bibitem[\protect\astroncite{Fyrileiv and M\o{}rk}{2002}]{Fyrileiv:2002vh}
+Fyrileiv, O. and M\o{}rk, K. (2002).
+\newblock Structural response of pipeline free spans based on beam theory.
+\newblock In {\em 21$^{st}$ International Conference on Offshore Mechanics and
+  Arctic Engineering}, volume~4, pages 175--183. The American Scociety of
+  Mechanical Engineers.
+
+\bibitem[\protect\astroncite{Het\'{e}nyi}{1946}]{Hetenyi}
+Het\'{e}nyi, M. (1946).
+\newblock {\em Beams on Elastic Foundation: Theory with Applications in the
+  Fields of Civil and Mechanical Engineering}.
+\newblock University of Michigan Press.
+
+\bibitem[\protect\astroncite{Hobbs}{1986}]{Hobbs86}
+Hobbs, R.~E. (1986).
+\newblock Influence of structural boundary conditions on pipeline free span
+  dynamics.
+\newblock In {\em Influence of structural boundary conditions on pipeline free
+  span dynamics}, International Offshore Mechanics and Arctic Engineering
+  Symposium, pages 685--691. ASME.
+
+\bibitem[\protect\astroncite{Hughes}{2012}]{Hughes}
+Hughes, T. J.~R. (2012).
+\newblock {\em The Finite Element Method: Linear Static and Dynamic Finite
+  Element Analysis}.
+\newblock Dover Publications, Inc., Mineola, New York.
+
+\bibitem[\protect\astroncite{Kapuria et~al.}{1998}]{Kapuria:1998aa}
+Kapuria, S., Salpekar, V.~Y., and Sengupta, S. (1998).
+\newblock Effect of axial force on allowable free spans of submarine pipelines.
+\newblock {\em The Eighth International Offshore and Polar Engineering
+  Conference}, pages ISOPE--I--98--118.
+
+\bibitem[\protect\astroncite{Kenny}{1993}]{OTI93613}
+Kenny, J.~P. (1993).
+\newblock Structural analysis of pipeline spans.
+\newblock Technical Report 93613, Health and Safety Executive - Offshore
+  Technology Information.
+
+\bibitem[\protect\astroncite{Kristiansen et~al.}{1998}]{Kristiansen:1998tk}
+Kristiansen, N.~{\O}., T{\o}rnes, K., Nystr{\o}m, P.~R., and Damsleth, P.
+  (1998).
+\newblock Structural modelling of multi-span pipe configurations subjected to
+  vortex induced vibrations.
+
+\bibitem[\protect\astroncite{Liu et~al.}{1996}]{Liu1996VibrationOA}
+Liu, X.~Q., Ertekin, R.~C., and Riggs, H.~R. (1996).
+\newblock Vibration of a free-free beam under tensile axial loads.
+\newblock {\em Journal of Sound and Vibration}, 190:273--282.
+
+\bibitem[\protect\astroncite{Maurizi et~al.}{1976}]{Maurizi:1976aa}
+Maurizi, M.~J., Rossi, R.~E., and Reyes, J.~A. (1976).
+\newblock Vibration frequencies for a uniform beam with one end spring-hinged
+  and subjected to a translational restraint at the other end.
+\newblock {\em Journal of Sound and Vibration}, 48(4):565--568.
+
+\bibitem[\protect\astroncite{Meirovitch}{2001}]{Meirovitch_2001}
+Meirovitch, L. (2001).
+\newblock {\em Fundamentals of Vibrations}.
+\newblock McGraw Hill, NewYork.
+
+\bibitem[\protect\astroncite{Nayfeh and Emam}{2008}]{Nayfeh:2008vk}
+Nayfeh, A.~H. and Emam, S.~A. (2008).
+\newblock Exact solution and stability of postbuckling configurations of beams.
+\newblock {\em Nonlinear Dynamics}, 54(4):395--408.
+
+\bibitem[\protect\astroncite{Peek et~al.}{2021}]{Peek:2021vp}
+Peek, R., Witz, M., and Vedeld, K. (2021).
+\newblock Dynamics of a pipeline span on an elastic seabed.
+\newblock {\em Applied Ocean Research}, 111:102407.
+
+\bibitem[\protect\astroncite{Roberts et~al.}{2014}]{Roberts2014}
+Roberts, G., Sriskandarajah, T., Ragupathy, P., Charnaux, C., Hegde, P., and
+  Ali, L. (2014).
+\newblock Free span fatigue assessments -- room for improvement?
+\newblock In {\em Proceedings of the Twenty-fourth International Ocean and
+  Polar Engineering Conference}, Busan, Korea.
+
+\bibitem[\protect\astroncite{Sollund et~al.}{2015a}]{Sollund:2015ab}
+Sollund, H.~A., Vedeld, K., and Fyrileiv, O. (2015a).
+\newblock Modal response of free spanning pipelines based on dimensional
+  analysis.
+\newblock {\em Applied Ocean Research}, 50:13--29.
+
+\bibitem[\protect\astroncite{Sollund et~al.}{2015b}]{Sollund:2015aa}
+Sollund, H.~A., Vedeld, K., and Fyrileiv, O. (2015b).
+\newblock Modal response of short pipeline spans on partial elastic
+  foundations.
+\newblock {\em Ocean Engineering}, 105:217--230.
+
+\bibitem[\protect\astroncite{Timoshenko and Gere}{1961}]{Timoshenko_Gere}
+Timoshenko, S.~P. and Gere, J.~M. (1961).
+\newblock {\em Theory of Elastic Stability}.
+\newblock McGraw-Hill, New York.
+
+\bibitem[\protect\astroncite{Vedeld et~al.}{2013}]{Vedeld:2013wi}
+Vedeld, K., Sollund, H., and Hellesland, J. (2013).
+\newblock Free vibrations of free spanning offshore pipelines.
+\newblock {\em Engineering Structures}, 56:68--82.
+
+\bibitem[\protect\astroncite{von Wagner and Lentz}{2016}]{Wagner:2016tx}
+von Wagner, U. and Lentz, L. (2016).
+\newblock On some aspects of the dynamic behavior of the softening duffing
+  oscillator under harmonic excitation.
+\newblock {\em Archive of Applied Mechanics}, 86(8):1383--1390.
+
+\bibitem[\protect\astroncite{Wang et~al.}{2009}]{Wang:2009ui}
+Wang, J., Steven~Wang, F., Duan, G., and Jukes, P. (2009).
+\newblock Viv analysis of pipelines under complex span conditions.
+\newblock {\em Journal of Marine Science and Application}, 8(2):105--109.
+
+\bibitem[\protect\astroncite{Zienkiewicz et~al.}{2005}]{Zienkiewicz}
+Zienkiewicz, O.~C., Taylor, R.~L., and Zhu, J. (2005).
+\newblock {\em The Finite Element Method: Its Basis and Fundamentals}.
+\newblock Elsevier.
+
+\end{thebibliography}

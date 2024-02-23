@@ -1,0 +1,132 @@
+from pylab import *
+import pandas as pd
+import matplotlib.pyplot as plt
+import math
+import numpy as N
+
+from scipy import optimize
+
+
+D=0.452	  #m
+He = 1.33*D
+A = 3.14*D**2/4
+I = 3.14*D**4/64 #m^4
+r = (I/A)**0.5
+
+
+def BeamOnElasticResponse(x, L=35,EI=1.25E8,ks = 20000,DTmp = 10):
+    """
+    This function calculates the response of a beam on an elastic foundation
+    """
+    He = 1.33*D
+    A = 3.14*D**2/4
+    I = 3.14*D**4/64 #m^4
+    r = (I/A)**0.5
+    #E = 60E9 # N/m^2 (Should be between 50-60E9 for GWF2)
+    #EI = E*I
+    E=EI/I
+    qe = 1100*A*9.81
+    se = E*A*0.00001*DTmp
+    #print(se)
+
+    H = He/r
+    S = se*L**2/EI;
+    Def = H**2/2;
+    q = qe*L**4/(r*EI);
+    k = (ks*L**4/EI)**0.25
+    eta = (S - Def)**0.5
+    eta0 = S**0.5
+    alp = (k**2/2 - (eta0/2)**2)**0.5 ;
+    bet = (k**2/2 + (eta0/2)**2)**0.5 ;
+
+    a = N.array([[1, 0, 1, 0, -1, 0], [0, 1, 0, eta, alp, -bet], [0, 0, -eta**2, 0, bet**2 - alp**2, 2*alp*bet], [0, 0, 0, eta**3, 3*bet**2*alp - alp**3,3*alp**2*bet - bet**3], [1, -1, N.cos(eta), -N.sin(eta), 0, 0], [0,1, eta*N.sin(eta), eta*N.cos(eta), 0, 0]])
+    b = N.array([q/k**4, 0,-q/eta**2,0,-H-q/eta**2/2,q/eta**2])
+    coefs = N.linalg.solve(a, b)
+    return q/k**4 + N.exp(-alp*x)*(coefs[4]*N.cos(bet*x) +coefs[5]*N.sin(bet*x))
+
+def BeamOnFreeSpanResponse(x,L=35,EI=1.25E8,ks = 20000,DTmp = 10):
+    """
+    This function calculates the response of a free spanning beam
+    """
+    He = 1.33*D
+    A = 3.14*D**2/4
+    I = 3.14*D**4/64 #m^4
+    r = (I/A)**0.5
+    #E = 60E9 # N/m^2 (Should be between 50-60E9 for GWF2)
+    #EI = E*I
+    E=EI/I
+    qe = 1100*A*9.81
+    se = E*A*0.00001*DTmp
+    #print(se)
+
+    H = He/r
+    S = se*L**2/EI;
+    Def = H**2/2;
+    q = qe*L**4/(r*EI);
+    k = (ks*L**4/EI)**0.25
+    eta = (S - Def)**0.5
+    eta0 = S**0.5
+    alp = (k**2/2 - (eta0/2)**2)**0.5 ;
+    bet = (k**2/2 + (eta0/2)**2)**0.5 ;
+
+    a = N.array([[1, 0, 1, 0, -1, 0], [0, 1, 0, eta, alp, -bet], [0, 0, -eta**2, 0, bet**2 - alp**2, 2*alp*bet], [0, 0, 0, eta**3, 3*bet**2*alp - alp**3,3*alp**2*bet - bet**3], [1, -1, N.cos(eta), -N.sin(eta), 0, 0], [0,1, eta*N.sin(eta), eta*N.cos(eta), 0, 0]])
+    b = N.array([q/k**4, 0,-q/eta**2,0,-H-q/eta**2/2,q/eta**2])
+    coefs = N.linalg.solve(a, b)
+    return q*x**2/(2*eta**2) + coefs[0] + coefs[1]*x + coefs[2]*N.cos(eta*x) + coefs[3]*N.sin(eta*x)
+
+
+# np.linspace(start = 0, stop = 100, num = 5)
+x = np.linspace(0,6,50)
+y = BeamOnElasticResponse(x)
+plt.plot(x,y, 'r',marker='*')
+
+x1 = np.linspace(-1,0,50)
+y1 = BeamOnFreeSpanResponse(x1)
+
+plt.plot(x1,y1, 'b', marker='*', label='E = 48 kPa')
+plt.legend(loc='lower right') #plt.legend(loc='upper left')
+plt.xlabel('x')
+plt.ylabel('w')
+
+plt.show()
+
+
+from scipy.optimize import fsolve
+Lnew = fsolve(lambda x:BeamOnElasticResponse(x,L=35,EI=1.25E8,ks = 20000,DTmp = 10),0) 
+print Lnew
+
+'''
+fig, ax1 = plt.subplots()
+
+color = 'tab:red'
+ax1.set_xlabel('Deflection per washer (mm)')
+ax1.set_ylabel('Force (kN)', color=color)
+ax1.plot(x, y/1000, color=color)
+ax1.tick_params(axis='y', labelcolor=color)
+
+ax2 = ax1.twinx()  # instantiate a second axes that shares the same x-axis
+
+color = 'tab:blue'
+ax2.set_ylabel('Energy (kJ)', color=color)  # we already handled the x-label with ax1
+ax2.plot(x, z*21, color=color)
+ax2.tick_params(axis='y', labelcolor=color)
+
+#both the xy (arrow tip) and xytext locations (text location) are in data coordinates. There are a variety of other coordinate systems one can choose -- you can specify the coordinate system of xy and xytext with one of the following strings for xycoords and textcoords (default is 'data')
+
+ax1.annotate('Fully installed height', xy=(6.15, 0),  xycoords='data',
+            xytext=(0.5, 0.5), textcoords='axes fraction',
+            arrowprops=dict(facecolor='black', shrink=0.05, width = .5, headwidth = 5),
+            horizontalalignment='right', verticalalignment='top',
+            )
+
+ax1.annotate('Valve open', xy=(12, 0),  xycoords='data',
+            xytext=(0.84, 0.5), textcoords='axes fraction',
+            arrowprops=dict(facecolor='black', shrink=0.05, width = .5, headwidth = 5),
+            horizontalalignment='right', verticalalignment='top',
+            )
+
+fig.tight_layout()  # otherwise the right y-label is slightly clipped
+plt.show()
+
+
+'''

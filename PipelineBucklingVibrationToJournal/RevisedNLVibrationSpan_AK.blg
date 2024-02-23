@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d (TeX Live 2022)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: RevisedNLVibrationSpan_AK.aux
+The style file: APA.bst
+Database file #1: References.bib
+Name 5 in "Roberts, G and Sriskandarajah, T. and Ragupathy, P and Charnaux, C and Hegde, P, and Ali, L" has a comma at the end for entry Roberts2014
+while executing---line 1048 of file APA.bst
+Warning--can't use both volume and number fields in Fyrileiv:2002vh
+Name 5 in "Roberts, G and Sriskandarajah, T. and Ragupathy, P and Charnaux, C and Hegde, P, and Ali, L" has a comma at the end for entry Roberts2014
+while executing---line 1123 of file APA.bst
+You've used 26 entries,
+            1940 wiz_defined-function locations,
+            653 strings with 7953 characters,
+and the built_in function-call counts, 10121 in all, are:
+= -- 998
+> -- 369
+< -- 19
++ -- 125
+- -- 120
+* -- 872
+:= -- 1739
+add.period$ -- 79
+call.type$ -- 26
+change.case$ -- 183
+chr.to.int$ -- 25
+cite$ -- 27
+duplicate$ -- 399
+empty$ -- 723
+format.name$ -- 156
+if$ -- 1984
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 27
+newline$ -- 132
+num.names$ -- 78
+pop$ -- 167
+preamble$ -- 1
+purify$ -- 190
+quote$ -- 0
+skip$ -- 301
+stack$ -- 0
+substring$ -- 721
+swap$ -- 86
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 146
+warning$ -- 1
+while$ -- 82
+width$ -- 0
+write$ -- 338
+(There were 2 error messages)
